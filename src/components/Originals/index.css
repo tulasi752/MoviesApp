@@ -1,0 +1,29 @@
+.image-originals {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .image-originals {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .image-originals {
+    height: 130px;
+    width: 150px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image-originals {
+    height: 180px;
+    width: 260px;
+    border-radius: 10px;
+  }
+}

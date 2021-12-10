@@ -1,0 +1,29 @@
+.image-backdrop {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .image-backdrop {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .image-backdrop {
+    height: 130px;
+    width: 150px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image-backdrop {
+    height: 180px;
+    width: 260px;
+    border-radius: 10px;
+  }
+}

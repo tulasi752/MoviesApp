@@ -1,0 +1,106 @@
+.nav-items {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 0px;
+}
+.nav-sm {
+  margin-bottom: 150px;
+}
+
+.Popular-Nav {
+  position: absolute;
+  left: 38%;
+  right: 55.56%;
+  top: 12.4%;
+  bottom: 86.34%;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 26px;
+  letter-spacing: -0.355556px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .Popular-Nav {
+    display: none;
+  }
+}
+.Account-Nav {
+  position: absolute;
+  left: 59.33%;
+  right: 30.83%;
+  top: 12.4%;
+  bottom: 86.34%;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.355556px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .Account-Nav {
+    display: none;
+  }
+}
+.image {
+  position: absolute;
+  left: 38.33%;
+  right: 8.33%;
+  top: 8.33%;
+  bottom: 8.33%;
+  background: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .image {
+    display: none;
+  }
+}
+
+.Home-Nav {
+  position: absolute;
+  left: 18%;
+  right: 79.44%;
+  top: 12.4%;
+  bottom: 86.34%;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.355556px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .Home-Nav {
+    display: none;
+  }
+}
+.closeIcon {
+  position: absolute;
+  left: 85%;
+  right: 8.33%;
+  top: 12%;
+  bottom: 8.33%;
+  height: 30px;
+  width: 30px;
+  color: white;
+  border-radius: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .closeIcon {
+    display: none;
+  }
+}
+
+.font2 {
+  font-weight: 800;
+  color: red;
+}

@@ -1,0 +1,275 @@
+.container-acc {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 55px;
+  width: 100vw;
+  background: black;
+}
+.main-container {
+  height: 100vh;
+}
+.account-heading {
+  position: absolute;
+  left: 11.53%;
+  right: 79.1%;
+  top: 20.38%;
+  bottom: 78.25%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 42px;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .account-heading {
+    font-size: 26px;
+  }
+}
+.hr {
+  position: absolute;
+  left: 11.46%;
+  right: 11.46%;
+  top: 28.25%;
+  bottom: 75.55%;
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+.membership {
+  position: absolute;
+  left: 11.53%;
+  right: 58.61%;
+  top: 32.78%;
+  bottom: 68.99%;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #94a3b8;
+}
+
+@media screen and (min-width: 768px) {
+  .membership {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .membership {
+    position: absolute;
+    left: 12.06%;
+    right: 58.61%;
+    top: 32.78%;
+    bottom: 68.99%;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #94a3b8;
+  }
+}
+
+.pre-container {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 398px) {
+  .address-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.gmail {
+  position: absolute;
+  left: 39.06%;
+  right: 58.96%;
+  top: 32.78%;
+  bottom: 68.99%;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1e293b;
+}
+
+@media screen and (min-width: 768px) {
+  .gmail {
+    position: absolute;
+    left: 32.06%;
+    right: 58.96%;
+    top: 32.78%;
+    bottom: 68.99%;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    color: #1e293b;
+  }
+}
+.passwordUser {
+  position: absolute;
+  left: 40%;
+  right: 27.57%;
+  top: 39.36%;
+  bottom: 64.41%;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 31px;
+  color: #64748b;
+}
+@media screen and (min-width: 768px) {
+  .passwordUser {
+    position: absolute;
+    left: 32.06%;
+    right: 27.57%;
+    top: 40.36%;
+    bottom: 64.41%;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    color: #64748b;
+  }
+}
+
+.hr2 {
+  position: absolute;
+  left: 11.46%;
+  right: 11.46%;
+  top: 48.25%;
+  bottom: 75.55%;
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+.planDetails {
+  position: absolute;
+  left: 11.53%;
+  right: 58.61%;
+  top: 52.78%;
+  bottom: 68.99%;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 31px;
+  color: #94a3b8;
+}
+@media screen and (min-width: 768px) {
+  .planDetails {
+    position: absolute;
+    left: 11.53%;
+    right: 58.61%;
+    top: 52.78%;
+    bottom: 68.99%;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    color: #94a3b8;
+  }
+}
+
+.premium {
+  position: absolute;
+  left: 40.06%;
+  top: 52.31%;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 31px;
+  color: #1e293b;
+}
+.fontAccount {
+  font-weight: 1200;
+}
+@media screen and (min-width: 768px) {
+  .premium {
+    position: absolute;
+    left: 32.06%;
+    right: 70.28%;
+    top: 52.31%;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    color: #1e293b;
+  }
+}
+
+.ultra {
+  position: absolute;
+  left: 41.06%;
+  top: 58.31%;
+  padding-right: 3px;
+  border: solid 1px black;
+  font-size: 14px;
+  line-height: 31px;
+  border-radius: 2px;
+  color: #1e293b;
+}
+
+@media screen and (min-width: 768px) {
+  .ultra {
+    position: absolute;
+    left: 46.06%;
+    top: 52.31%;
+    font-size: 15px;
+    font-family: 'roboto';
+    padding-right: 3px;
+    font-size: 23px;
+    border: solid 1px black;
+    color: #1e293b;
+  }
+}
+
+.button-logout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 20px;
+  border-width: none;
+  position: absolute;
+  left: 33.88%;
+  right: 46.81%;
+  color: white;
+  font-size: 15px;
+  font-family: 'roboto';
+  top: 74.42%;
+  border: none;
+  bottom: 41.42%;
+  background: #e50914;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-logout {
+    left: 48%;
+    right: 46.81%;
+    top: 74.42%;
+    border: none;
+    bottom: 41.42%;
+    background: #e50914;
+    border-radius: 4px;
+  }
+}
+.hr3 {
+  position: absolute;
+  left: 11.46%;
+  right: 11.46%;
+  top: 68.25%;
+  bottom: 75.55%;
+  background: #cbd5e1;
+  border-radius: 10px;
+}

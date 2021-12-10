@@ -1,0 +1,183 @@
+.login-form-container {
+  background: hsl(0, 0%, 0%);
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .login-form-container {
+    height: 100vh;
+    background-size: cover;
+    background-image: url('https://i.ibb.co/K684JdB/signin.png');
+  }
+}
+.form-container {
+  border-radius: 8px;
+  display: flex;
+  padding: 18px;
+  background: hsl(0, 0%, 0%);
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 786px) {
+  .form-container {
+    opacity: 0.9;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading-signIn-login {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  margin-right: 150px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 786px) {
+  .heading-signIn-login {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 0px;
+  }
+}
+.input-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.username-input-filed {
+  width: 260px;
+  margin-top: 10px;
+  outline: none;
+  padding: 20px;
+  border-radius: 5px;
+  height: 45px;
+  color: white;
+  background: #333333;
+}
+
+.password-input-filed {
+  width: 260px;
+  height: 45px;
+  outline: none;
+  color: white;
+  padding: 20px;
+  margin-top: 10px;
+  background: #333333;
+  border-radius: 5px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.signIn {
+  background: #e50914;
+  border-radius: 4px;
+  width: 260px;
+  height: 45px;
+  border-radius: 4px;
+  border: none;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  outline: none;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .signIn {
+    background: #e50914;
+    border-radius: 4px;
+    height: 42px;
+    width: 88px;
+    border: none;
+    font-size: 15px;
+    font-family: Roboto;
+    font-style: normal;
+    outline: none;
+    font-weight: bold;
+    color: #ffffff;
+  }
+}
+
+.error-msg {
+  font-size: 14px;
+  color: #fb923c;
+}
+
+.forget-password-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.signup-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.forget-password-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(0, 2%, 51%);
+  margin-top: 20px;
+  margin-right: 12px;
+}
+@media screen and (min-width: 576px) {
+  .forget-password-label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: -5px;
+    color: hsl(0, 2%, 51%);
+    margin-top: 20px;
+    margin-right: 12px;
+  }
+}
+.signup-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  margin-right: 7px;
+  margin-top: 22px;
+}
+@media screen and (min-width: 768px) {
+  .signup-label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-right: 7px;
+    margin-top: 22px;
+  }
+}

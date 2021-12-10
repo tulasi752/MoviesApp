@@ -1,0 +1,667 @@
+* {
+  margin-top: 0%;
+}
+.bg-container-2 {
+  height: 1200px;
+  background-image: linear-gradient(
+    to bottom,
+    white,
+    rgb(22, 21, 21),
+    rgb(22, 21, 21),
+    rgb(22, 21, 21),
+    rgb(19, 19, 19)
+  );
+}
+
+@media screen and (min-width: 786px) {
+  .bg-container-2 {
+    height: 1800px;
+  }
+}
+.moviesDetails-similar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 576px) {
+  .moviesDetails-similar-container {
+    padding-left: 40px;
+  }
+}
+@media screen and (min-width: 786px) {
+  .moviesDetails-similar-container {
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 922px) {
+  .moviesDetails-similar-container {
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .moviesDetails-similar-container {
+    padding-left: 100px;
+    margin-top: 30px;
+  }
+}
+
+.bg_image-posterPath-container {
+  height: 50vh;
+  background-size: cover;
+}
+@media screen and (min-width: 992px) {
+  .bg_image-posterPath-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bg_image-backdropPath-container {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bg_image-backdropPath-container {
+    height: 80vh;
+  }
+}
+
+.overview {
+  width: 300px;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 786px) {
+  .overview {
+    width: 550px;
+    font-size: 28px;
+    line-height: 51px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .overview {
+    width: 550px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overview {
+    width: 550px;
+    font-size: 24px;
+    line-height: 31px;
+    color: #ffffff;
+  }
+}
+
+.span-runtime {
+  font-family: 'roboto';
+  font-size: 20px;
+  width: 100px;
+}
+
+.Re-date {
+  font-size: 20px;
+}
+@media screen and (min-width: 786px) {
+  .Re-date {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Re-date {
+    font-size: 25px;
+    margin-left: 10px;
+  }
+}
+@media (width: 1024px) {
+  .Re-date {
+    font-size: 30px;
+  }
+}
+.data-error {
+  font-size: 30px;
+  color: white;
+}
+
+.container-moviesDetails {
+  padding-top: 1px;
+  padding-left: 35px;
+}
+@media screen and (min-width: 576px) {
+  .container-moviesDetails {
+    padding-left: 70px;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .container-moviesDetails {
+    padding-left: 108px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container-moviesDetails {
+    padding-left: 68px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-moviesDetails {
+    padding-left: 150px;
+  }
+}
+
+.movieDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 786px) {
+  .movieDetails {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .movieDetails {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .movieDetails {
+    margin-top: 50px;
+    margin-left: -50px;
+  }
+}
+.list-cont {
+  display: flex;
+  flex-direction: column;
+}
+.originalLanguage {
+  border: 1px solid white;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  padding-right: 10px;
+  margin-left: -15px;
+  padding-left: 10px;
+  line-height: 21px;
+  color: #ffffff;
+}
+@media screen and (min-width: 786px) {
+  .originalLanguage {
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .originalLanguage {
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+.date-year {
+  display: none;
+}
+@media screen and (min-width: 786px) {
+  .date-year {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.time {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .time {
+    margin-top: 10px;
+    line-height: 23px;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 992px) {
+  .time {
+    width: 200px;
+    font-family: HK Grotesk;
+    font-style: n2rmal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+  }
+}
+.play-button {
+  width: 65px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 7px;
+  border-width: 0px;
+}
+@media screen and (min-width: 768px) {
+  .play-button {
+    width: 70px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 4px;
+    border-width: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .play-button {
+    width: 78px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 4px;
+    border-width: none;
+  }
+}
+
+.title {
+  width: 300px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    width: 500px;
+    font-size: 42px;
+    line-height: 63px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .title {
+    width: 700px;
+    font-size: 45px;
+    line-height: 63px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+.RatingCount {
+  list-style-type: none;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #64748b;
+}
+
+@media screen and (min-width: 786px) {
+  .RatingCount {
+    margin-left: 10px;
+    list-style-type: none;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .RatingCount {
+    font-size: 24px;
+  }
+}
+
+.RatingCountList {
+  list-style-type: none;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 6px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 786px) {
+  .RatingCountList {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .RatingCountList {
+    list-style-type: none;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    margin-top: 15px;
+    color: #ffffff;
+  }
+}
+
+.ReleaseDate {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #64748b;
+}
+@media screen and (min-width: 786px) {
+  .ReleaseDate {
+    font-size: 22px;
+    color: #64748b;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ReleaseDate {
+    font-size: 24px;
+  }
+}
+
+.ReleaseDateList {
+  list-style-type: none;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 6px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 786px) {
+  .ReleaseDateList {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ReleaseDateList {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #ffffff;
+  }
+}
+
+.genre {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #64748b;
+}
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+@media screen and (min-width: 786px) {
+  .genre {
+    margin-left: 10px;
+    font-size: 24px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .genre {
+    font-size: 24px;
+    line-height: 18px;
+  }
+}
+
+.list {
+  list-style-type: none;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 786px) {
+  .list {
+    font-size: 22px;
+    line-height: 20px;
+    margin-top: 12px;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list {
+    font-size: 24px;
+    margin-top: 7px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+}
+
+.audio {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #64748b;
+}
+@media screen and (min-width: 786px) {
+  .audio {
+    margin-left: 10px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .audio {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+.list2 {
+  list-style-type: none;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 7px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 786px) {
+  .list2 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list2 {
+    font-size: 24px;
+  }
+}
+
+.RatingAverage {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #64748b;
+}
+
+@media screen and (min-width: 786px) {
+  .RatingAverage {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .RatingAverage {
+    font-size: 24px;
+    margin-left: 10px;
+    line-height: 26px;
+    color: #64748b;
+  }
+}
+
+.RatingAverageList {
+  list-style-type: none;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 6px;
+  line-height: 20px;
+  color: #ffffff;
+}
+@media screen and (min-width: 786px) {
+  .RatingAverageList {
+    margin-left: 10px;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .RatingAverageList {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+}
+
+.budget {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #64748b;
+}
+
+@media screen and (min-width: 786px) {
+  .budget {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .budget {
+    font-size: 24px;
+  }
+}
+
+.budgetAmount {
+  list-style-type: none;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 6px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 786px) {
+  .budgetAmount {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .budgetAmount {
+    font-size: 24px;
+
+    margin-top: 30px;
+  }
+}
+
+.moreMovies-heading {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+  width: 500px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 786px) {
+  .moreMovies-heading {
+    font-size: 28px;
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .moreMovies-heading {
+    font-size: 28px;
+    width: 500px;
+  }
+}
+
+.left-linear-spe {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 20.81%;
+  bottom: 51.68%;
+  height: 35%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(24, 24, 24, 0.546875) 38.26%,
+    #131313 92.82%,
+    #131313 98.68%,
+    #131313 108.61%
+  );
+}
+
+@media screen and (min-width: 786px) {
+  .left-linear-spe {
+    top: 30.81%;
+    height: 25%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .left-linear-spe {
+    top: 30.81%;
+    height: 30%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .left-linear-spe {
+    top: 20.81%;
+    height: 60%;
+  }
+}

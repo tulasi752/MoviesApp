@@ -1,0 +1,736 @@
+.navbar-nav {
+  background: #131313;
+  opacity: 20%;
+  position: absolute;
+  width: 200vw;
+  top: 0%;
+}
+
+@media screen and (min-width: 768px) {
+  .Home-navbar {
+    position: absolute;
+    left: 28.29%;
+    top: 3.38%;
+    margin-right: 40px;
+    right: 18.75%;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-size: 18px;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 767px) {
+  .Home-navbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .popular-nav {
+    position: absolute;
+    left: 36.4%;
+    right: 67.85%;
+    top: 3.25%;
+    bottom: 96.21%;
+    font-family: HK Grotesk;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+  }
+}
+@media (max-width: 767px) {
+  .popular-nav {
+    display: none;
+  }
+}
+.font1 {
+  font-weight: 800;
+  color: red;
+}
+
+.search {
+  position: absolute;
+  left: 70%;
+  right: 0%;
+  width: 20px;
+  top: 5%;
+  bottom: 0%;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .search {
+    position: absolute;
+    left: 68%;
+    right: 0%;
+    width: 20px;
+    margin-top: 20px;
+    top: 2%;
+    bottom: 0%;
+    color: #ffffff;
+  }
+}
+
+.search-1 {
+  position: absolute;
+  left: 70%;
+  right: 0%;
+  width: 20px;
+  top: 5%;
+  height: 14px;
+  bottom: 0%;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .search-1 {
+    position: absolute;
+    left: 68.3%;
+    right: 0%;
+    width: 20px;
+    top: 3.8%;
+    height: 14px;
+    bottom: 0%;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .search-1 {
+    position: absolute;
+    left: 66%;
+    right: 0%;
+    width: 20px;
+    top: 5%;
+    height: 14px;
+    bottom: 0%;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .search-1 {
+    position: absolute;
+    left: 68%;
+    right: 0%;
+    width: 20px;
+    top: 3.8%;
+    width: 14px;
+    height: 14px;
+    bottom: 0%;
+    color: #ffffff;
+  }
+}
+.searchBar {
+  position: absolute;
+  left: 50%;
+  top: 4%;
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid white;
+  padding: 5px;
+  width: 95px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .searchBar {
+    position: absolute;
+    left: 53%;
+    right: 0%;
+    top: 3%;
+    width: 170px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .searchBar {
+    position: absolute;
+    left: 58%;
+    right: 0%;
+    top: 2.5%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .searchBar {
+    position: absolute;
+    left: 58%;
+    right: 0%;
+    top: 2.5%;
+    padding: 9px;
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .avatar-image-container {
+    margin-top: 1px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .img-avatar {
+    margin-right: 30px;
+    position: absolute;
+    left: 77.29%;
+    top: 2%;
+    right: 18.75%;
+  }
+}
+
+@media (max-width: 767px) {
+  .img-avatar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-for-small {
+    display: none;
+  }
+}
+
+.arrow-down {
+  position: absolute;
+  left: 87.49%;
+  right: 18.75%;
+  top: 6.8%;
+  bottom: 6.41%;
+}
+.nav-three {
+  position: absolute;
+  left: 84.69%;
+  right: 57.81%;
+  top: 2.88%;
+  bottom: 21.88%;
+}
+@media screen and (min-width: 768px) {
+  .nav-three {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-two {
+    display: none;
+  }
+}
+.nav-two {
+  position: absolute;
+  left: 84.69%;
+  right: 18.75%;
+  top: 3%;
+  bottom: 46.88%;
+}
+@media screen and (min-width: 768px) {
+  .nav-one {
+    display: none;
+  }
+}
+.nav-one {
+  position: absolute;
+  left: 84.69%;
+  right: 18.75%;
+  top: 4.88%;
+  bottom: 71.88%;
+}
+.M-navbar {
+  width: 19px;
+  height: 28px;
+  position: absolute;
+  left: 8.6%;
+  top: 4.05%;
+  bottom: 90.78%;
+  color: #e50014;
+}
+@media screen and (min-width: 300px) {
+  .M-navbar {
+    left: 9%;
+    top: 4.05%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .M-navbar {
+    width: 19px;
+    height: 28px;
+    position: absolute;
+    left: 9%;
+    top: 4.05%;
+    bottom: 90.78%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 576px) {
+  .M-navbar {
+    width: 19px;
+    height: 28px;
+    position: absolute;
+    left: 8.6%;
+    top: 4.05%;
+    bottom: 90.78%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 768px) {
+  .M-navbar {
+    width: 29px;
+    height: 38.5px;
+    position: absolute;
+    left: 8%;
+    top: 2.9%;
+    bottom: 94.49%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 992px) {
+  .M-navbar {
+    width: 29px;
+    height: 39px;
+    position: absolute;
+    left: 9.3%;
+    top: 2.9%;
+    bottom: 94.49%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .M-navbar {
+    width: 29px;
+    height: 38px;
+    position: absolute;
+    left: 9.5%;
+    top: 2.9%;
+    bottom: 94.49%;
+    color: #e50014;
+  }
+}
+@media (width: 1024px) {
+  .M-navbar {
+    width: 29px;
+    height: 38px;
+    position: absolute;
+    left: 9.5%;
+    top: 2.9%;
+    bottom: 94.49%;
+    color: #e50014;
+  }
+}
+.o-navbar {
+  width: 19px;
+  height: 27.5px;
+  position: absolute;
+  left: 15.8%;
+  top: 4%;
+  bottom: 91.02%;
+  color: #e50014;
+}
+@media screen and (min-width: 300px) {
+  .o-navbar {
+    width: 19px;
+    height: 28px;
+    position: absolute;
+    left: 13.8%;
+    top: 4%;
+    bottom: 91.02%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 500px) {
+  .o-navbar {
+    width: 19px;
+    height: 28px;
+    position: absolute;
+    left: 12.8%;
+    top: 4%;
+    bottom: 91.02%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 576px) {
+  .o-navbar {
+    width: 19px;
+    height: 28px;
+    position: absolute;
+    left: 11.7%;
+    top: 4%;
+    bottom: 91.02%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 768px) {
+  .o-navbar {
+    position: absolute;
+    left: 12%;
+    top: 2.8%;
+    width: 19px;
+    height: 37px;
+    bottom: 91.02%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 998px) {
+  .o-navbar {
+    position: absolute;
+    left: 12.8%;
+    top: 3%;
+    width: 19px;
+    height: 37.5px;
+    bottom: 91.02%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .o-navbar {
+    position: absolute;
+    left: 11.8%;
+    top: 2.9%;
+    width: 19px;
+    height: 37px;
+    bottom: 91.02%;
+    color: #e50014;
+  }
+}
+@media (width: 1024px) {
+  .o-navbar {
+    position: absolute;
+    left: 12.3%;
+    top: 2.9%;
+    width: 19px;
+    height: 37px;
+    bottom: 91.02%;
+    color: #e50014;
+  }
+}
+.v-navbar {
+  position: absolute;
+  left: 22.2%;
+  top: 4%;
+  width: 18px;
+  height: 25.6px;
+  bottom: 95.98%;
+  color: #e50014;
+}
+@media screen and (min-width: 300px) {
+  .v-navbar {
+    position: absolute;
+    left: 18%;
+    top: 4%;
+    width: 18px;
+    height: 26px;
+    bottom: 95.98%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 500px) {
+  .v-navbar {
+    position: absolute;
+    left: 16%;
+    top: 4%;
+    width: 18px;
+    height: 26px;
+    bottom: 95.98%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 576px) {
+  .v-navbar {
+    position: absolute;
+    left: 14.8%;
+    top: 4%;
+    width: 18px;
+    height: 26px;
+    bottom: 95.98%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 768px) {
+  .v-navbar {
+    position: absolute;
+    left: 14.7%;
+    width: 22px;
+    height: 36.9px;
+    top: 2.9%;
+    bottom: 91.02%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .v-navbar {
+    position: absolute;
+    left: 13.3%;
+    width: 22px;
+    height: 37px;
+    top: 2.9%;
+    bottom: 91.02%;
+    color: #e50014;
+  }
+}
+@media (width: 1024px) {
+  .v-navbar {
+    position: absolute;
+    left: 14%;
+    width: 22px;
+    height: 37px;
+    top: 2.9%;
+    bottom: 91.02%;
+    color: #e50014;
+  }
+}
+.i-navbar {
+  position: absolute;
+  left: 27%;
+  top: 4%;
+  width: 15px;
+  height: 27px;
+  bottom: 95.96%;
+  color: #e50014;
+}
+@media screen and (min-width: 300px) {
+  .i-navbar {
+    position: absolute;
+    left: 22%;
+    top: 4%;
+    width: 15px;
+    height: 27px;
+    bottom: 95.96%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 500px) {
+  .i-navbar {
+    position: absolute;
+    left: 18.5%;
+    top: 4%;
+    width: 15px;
+    height: 27px;
+    bottom: 95.96%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 576px) {
+  .i-navbar {
+    position: absolute;
+    left: 17%;
+    top: 4%;
+    width: 15px;
+    height: 27px;
+    bottom: 95.96%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 768px) {
+  .i-navbar {
+    width: 7px;
+    height: 37px;
+    position: absolute;
+    left: 17.7%;
+    top: 3%;
+    bottom: 95.96%;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .i-navbar {
+    width: 7px;
+    height: 37px;
+    position: absolute;
+    left: 15.1%;
+    top: 3%;
+    bottom: 95.96%;
+    color: #e50014;
+  }
+}
+@media (width: 1024px) {
+  .i-navbar {
+    width: 7px;
+    height: 37px;
+    position: absolute;
+    left: 16.1%;
+    top: 3%;
+    bottom: 95.96%;
+    color: #e50014;
+  }
+}
+.e-navbar {
+  width: 15px;
+  height: 27px;
+  position: absolute;
+  left: 31.5%;
+  top: 4%;
+  bottom: 90.98%;
+  color: #e50014;
+}
+@media screen and (min-width: 300px) {
+  .e-navbar {
+    left: 25%;
+    top: 4.05%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .e-navbar {
+    left: 21%;
+    top: 4.05%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .e-navbar {
+    left: 19%;
+    top: 4%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .e-navbar {
+    /* Vector */
+
+    /* Vector */
+    width: 19px;
+    height: 37px;
+    position: absolute;
+    left: 19%;
+    top: 3%;
+    bottom: 90.98%;
+
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .e-navbar {
+    /* Vector */
+
+    /* Vector */
+    width: 19px;
+    height: 37px;
+    position: absolute;
+    left: 15.8%;
+    top: 3%;
+    bottom: 90.98%;
+
+    color: #e50014;
+  }
+}
+@media (width: 1024px) {
+  .e-navbar {
+    /* Vector */
+
+    /* Vector */
+    width: 19px;
+    height: 37px;
+    position: absolute;
+    left: 16.8%;
+    top: 3%;
+    bottom: 90.98%;
+
+    color: #e50014;
+  }
+}
+.s-navbar {
+  /* Vector */
+
+  /* Vector */
+
+  position: absolute;
+  left: 36.2%;
+  top: 4%;
+  width: 15px;
+  height: 28px;
+  color: #e50014;
+}
+@media screen and (min-width: 300px) {
+  .s-navbar {
+    /* Vector */
+
+    /* Vector */
+
+    position: absolute;
+    left: 28.8%;
+    top: 4.05%;
+    width: 15px;
+    height: 28px;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 500px) {
+  .s-navbar {
+    /* Vector */
+
+    /* Vector */
+
+    position: absolute;
+    left: 23.5%;
+    top: 4.05%;
+    width: 15px;
+    height: 28px;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 576px) {
+  .s-navbar {
+    /* Vector */
+
+    /* Vector */
+
+    position: absolute;
+    left: 21.5%;
+    top: 4%;
+    width: 15px;
+    height: 28px;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 768px) {
+  .s-navbar {
+    position: absolute;
+    left: 21.5%;
+    top: 2.9%;
+    bottom: 95.81%;
+    width: 20px;
+    height: 40px;
+    color: #e50014;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .s-navbar {
+    position: absolute;
+    left: 17.2%;
+    top: 3%;
+    bottom: 95.81%;
+    width: 20px;
+    height: 38px;
+    color: #e50014;
+  }
+}
+@media (width: 1024px) {
+  .s-navbar {
+    position: absolute;
+    left: 18.5%;
+    top: 3%;
+    bottom: 95.81%;
+    width: 20px;
+    height: 38px;
+    color: #e50014;
+  }
+}
+.nav-three {
+  position: absolute;
+  top: 6.8%;
+  left: 84.9%;
+}
+.nav-one {
+  position: absolute;
+  top: 3.8%;
+}
+.nav-two {
+  position: absolute;
+  top: 5.6%;
+}
+
+.arrow-down {
+  position: absolute;
+  left: 86.8%;
+  top: 7%;
+}
+@media screen and (min-width: 576px) {
+  .arrow-down {
+    position: absolute;
+    left: 86%;
+    top: 7%;
+  }
+}
