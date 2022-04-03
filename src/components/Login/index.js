@@ -54,7 +54,6 @@ class Login extends Component {
     }
     const API_KEY = '43cdec2ae13aa18beee5c974eb579a54'
     const url = `https://api.themoviedb.org/3/authentication/token/validate_with_login?api_key=${API_KEY}`
-
     const options = {
       method: 'POST',
       body: JSON.stringify(UserDetails),
@@ -237,7 +236,7 @@ class Login extends Component {
                 <a
                   href="https://www.themoviedb.org/reset-password"
                   className="signup-label"
-                  onClick={this.signUp}
+                  onClick={this.forgetPassword}
                   target="_self"
                 >
                   Reset Password
