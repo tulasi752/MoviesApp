@@ -13,9 +13,10 @@ import './index.css'
 const settings = {
   dots: false,
   infinite: false,
-  speed: 700,
+  speed: 800,
   slidesToShow: 4,
   slidesToScroll: 1,
+  autoplay: true,
   responsive: [
     {
       breakpoint: 1024,

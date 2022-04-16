@@ -7,7 +7,7 @@ class Footer extends Component {
       <div className="footer-container-1">
         <div className="footer">
           <img
-            src="https://i.ibb.co/3SN0mh6/google.png"
+            src="https://i.ibb.co/r2HDCYv/google-7.png"
             alt="google"
             className="google"
           />

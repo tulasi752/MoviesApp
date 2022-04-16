@@ -1,11 +1,13 @@
 import {Component} from 'react'
+import {Redirect} from 'react-router-dom'
 import Loader from 'react-loader-spinner'
 import SimilarMovieData from '../SimilarMovieData'
 import Navbar from '../Navbar'
+import NotFound from '../NotFound'
 import './index.css'
 
 class MovieDetails extends Component {
-  state = {movieData: [], isLoading: true}
+  state = {movieData: [], isLoading: true, dataFailure: false}
 
   componentDidMount() {
     this.getMovieDetails()
@@ -19,40 +21,41 @@ class MovieDetails extends Component {
   }
 
   getMovieDetails = async () => {
-    const {match} = this.props
+    const {match, history} = this.props
     const {params} = match
     const {id} = params
     this.getMovies = () => id
-
     const response = await fetch(
       `https://api.themoviedb.org/3/movie/${id}?api_key=43cdec2ae13aa18beee5c974eb579a54&language=en-US`,
     )
-    if (response.ok === true) {
-      const data = await response.json()
-      const formattedData = {
-        eachId: data.id,
-        backdropPath: data.backdrop_path,
-        posterPath: data.poster_path,
-        name: data.original_name,
-        genres: data.genres,
-        RatingCount: data.vote_count,
-        RatingAverage: data.vote_average,
-        originalLanguage: data.original_language,
-        AudioAvailable: data.spoken_languages,
-        ReleaseDate: data.release_date,
-        title: data.original_title,
-        overview: data.overview,
-        releaseDate: data.release_date,
-        runtime: data.runtime,
-        budget: data.budget,
-      }
-      this.selectedMovie(formattedData, false)
+    console.log(response.status)
+    console.log('response.status')
+    if (response.status === 404) {
+      this.setState({isLoading: false})
+      return history.replace('/NotFound')
     }
-    return (
-      <p className="data-error">
-        The resource you requested could not be found.
-      </p>
-    )
+    const data = await response.json()
+    console.log(response)
+    console.log(data)
+    console.log('data')
+    const formattedData = {
+      eachId: data.id,
+      backdropPath: data.backdrop_path,
+      posterPath: data.poster_path,
+      name: data.original_name,
+      genres: data.genres,
+      RatingCount: data.vote_count,
+      RatingAverage: data.vote_average,
+      originalLanguage: data.original_language,
+      AudioAvailable: data.spoken_languages,
+      ReleaseDate: data.release_date,
+      title: data.original_title,
+      overview: data.overview,
+      releaseDate: data.release_date,
+      runtime: data.runtime,
+      budget: data.budget,
+    }
+    return this.selectedMovie(formattedData, false)
   }
 
   genres = () => {
@@ -193,57 +196,59 @@ class MovieDetails extends Component {
     const {params} = match
     const {id} = params
     localStorage.setItem('movieDetails', this.getMovieDetails)
-    const {movieData, isLoading} = this.state
+    const {movieData, isLoading, dataFailure} = this.state
     const {backdropPath, posterPath} = movieData
     return (
       <>
         <Navbar />
-        <div className="bg-container-2">
-          {isLoading ? (
-            this.renderLoader()
-          ) : (
-            <>
-              <div
-                className="bg_image-posterPath-container"
-                style={{
-                  backgroundImage: `url(${`https://image.tmdb.org/t/p/original/${backdropPath}`})`,
-                  backgroundSize: 'cover',
+        <>
+          <div className="bg-container-2">
+            {isLoading ? (
+              this.renderLoader()
+            ) : (
+              <>
+                <div
+                  className="bg_image-posterPath-container"
+                  style={{
+                    backgroundImage: `url(${`https://image.tmdb.org/t/p/original/${backdropPath}`})`,
+                    backgroundSize: 'cover',
 
-                  color: '#f5f5f5',
-                }}
-              >
-                <div className="left-linear-spe">
-                  <div className="container-moviesDetails">
-                    {this.renderMovieDetails()}
-                  </div>
-                  <div className="movieDetails">{this.movieDetails()}</div>
-                  <div className="moviesDetails-similar-container">
-                    <SimilarMovieData id={id} />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="bg_image-backdropPath-container"
-                style={{
-                  backgroundImage: `url(${`https://image.tmdb.org/t/p/original/${posterPath}`})`,
-                  backgroundSize: 'cover',
-                  color: '#f5f5f5',
-                }}
-              >
-                <div className="left-linear-spe">
-                  {' '}
-                  <div className="container-moviesDetails">
-                    {this.renderMovieDetails()}
-                  </div>
-                  <div className="movieDetails">{this.movieDetails()}</div>
-                  <div className="moviesDetails-similar-container">
-                    <SimilarMovieData id={id} />
+                    color: '#f5f5f5',
+                  }}
+                >
+                  <div className="left-linear-spe">
+                    <div className="container-moviesDetails">
+                      {this.renderMovieDetails()}
+                    </div>
+                    <div className="movieDetails">{this.movieDetails()}</div>
+                    <div className="moviesDetails-similar-container">
+                      <SimilarMovieData id={id} />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </>
-          )}
-        </div>
+                <div
+                  className="bg_image-backdropPath-container"
+                  style={{
+                    backgroundImage: `url(${`https://image.tmdb.org/t/p/original/${posterPath}`})`,
+                    backgroundSize: 'cover',
+                    color: '#f5f5f5',
+                  }}
+                >
+                  <div className="left-linear-spe">
+                    {' '}
+                    <div className="container-moviesDetails">
+                      {this.renderMovieDetails()}
+                    </div>
+                    <div className="movieDetails">{this.movieDetails()}</div>
+                    <div className="moviesDetails-similar-container">
+                      <SimilarMovieData id={id} />
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
+        </>
       </>
     )
   }
