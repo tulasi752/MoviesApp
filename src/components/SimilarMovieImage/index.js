@@ -3,8 +3,12 @@ import {Link} from 'react-router-dom'
 import './index.css'
 
 const SimilarMovieImage = props => {
-  const {originalData} = props
+  const {originalData, movieId, onClickMovie} = props
   const {posterPath, id} = originalData
+  const renderFunction1 = () => {
+    movieId(id)
+    onClickMovie()
+  }
 
   return (
     <Link to={`/movie/${id}`}>
@@ -13,7 +17,7 @@ const SimilarMovieImage = props => {
         className="image-sim"
         alt="img"
         key={id}
-        onClick={localStorage.getItem('movieDetails')}
+        onClick={renderFunction1}
       />
     </Link>
   )

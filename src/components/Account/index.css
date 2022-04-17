@@ -210,8 +210,8 @@
 
 .ultra {
   position: absolute;
-  left: 41.06%;
-  top: 58.31%;
+  left: 53.06%;
+  top: 52.31%;
   padding-right: 3px;
   border: solid 1px black;
   font-size: 14px;
@@ -243,6 +243,7 @@
   padding: 15px;
   position: absolute;
   top: 70%;
+  left: 45%;
   text-align: center;
   border-width: none;
   color: white;

@@ -23,10 +23,14 @@ class SearchHome extends Component {
   GetSearchMovies = async () => {
     const {page} = this.state
     const response = await fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=43cdec2ae13aa18beee5c974eb579a54&language=en-US&page=${page}&query=${localStorage.getItem(
-        'string',
-      )}`,
+      `https://api.themoviedb.org/3/search/movie?api_key=${
+        global.API_KEY
+      }&language=en-US&page=${page}&query=${localStorage.getItem('string')}`,
     )
+    console.log(response.status)
+    if (response.status === 404) {
+      return <UnknownString />
+    }
     const data = await response.json()
     const dataPages = data.total_pages
     const requiredData = data.results
@@ -37,13 +41,14 @@ class SearchHome extends Component {
         name: each.original_title,
         posterPath: each.poster_path,
       }))
+
       this.setState({
         MovieData: HomeMovieData,
         isLoading: false,
         totalPages: dataPages,
       })
     }
-    return <UnknownString />
+    return ''
   }
 
   renderLoader = () => (
@@ -80,7 +85,6 @@ class SearchHome extends Component {
     if (MovieData.length === 0) {
       return <UnknownString />
     }
-
     return (
       <>
         <div className="navbar-nav"> </div>

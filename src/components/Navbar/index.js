@@ -4,12 +4,10 @@ import Nav from '../Nav'
 import './index.css'
 
 class Navbar extends Component {
-  constructor() {
-    super()
-    this.state = {
-      searchShow: false,
-      clickNav: false,
-    }
+  state = {
+    searchShow: false,
+    clickNav: false,
+    clickIcon: false,
   }
 
   onclickSearch = () => {

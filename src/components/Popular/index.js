@@ -16,7 +16,7 @@ class Popular extends Component {
   GetPopularMovies = async () => {
     const {page} = this.state
     const response = await fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=43cdec2ae13aa18beee5c974eb579a54&language=en-US&page=${page}`,
+      `https://api.themoviedb.org/3/movie/popular?api_key=${global.API_KEY}&language=en-US&page=${page}`,
     )
     const data = await response.json()
     const popularMovieData = data.results.map(each => ({

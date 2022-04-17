@@ -7,13 +7,14 @@ import Navbar from '../Navbar'
 import Posters from '../Posters'
 import Originals from '../Originals'
 import TrendingMovies from '../TrendingMovies'
+import Global from '../../Constants/Global'
 import Footer from '../Footer'
 import './index.css'
 
 const settings = {
   dots: false,
   infinite: false,
-  speed: 800,
+  speed: 1000,
   slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
@@ -24,22 +25,6 @@ const settings = {
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-      },
-    },
-
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
       },
     },
   ],
@@ -70,7 +55,7 @@ class Home extends Component {
 
   getTrending = async () => {
     const response = await fetch(
-      'https://api.themoviedb.org/3/trending/all/week?api_key=43cdec2ae13aa18beee5c974eb579a54',
+      `https://api.themoviedb.org/3/trending/all/week?api_key=${global.API_KEY}`,
     )
     const data = await response.json()
     const trendingData = data.results.map(each => ({
@@ -80,7 +65,6 @@ class Home extends Component {
       name: each.original_title,
       overView: each.overview,
     }))
-
     this.setTrending(trendingData, false)
   }
 
@@ -105,7 +89,7 @@ class Home extends Component {
 
   getTopRated = async () => {
     const response = await fetch(
-      'https://api.themoviedb.org/3/movie/top_rated?api_key=43cdec2ae13aa18beee5c974eb579a54&language=en-US',
+      `https://api.themoviedb.org/3/movie/top_rated?api_key=${global.API_KEY}&language=en-US`,
     )
     const data = await response.json()
     const topRatedData = data.results.map(each => ({
@@ -139,7 +123,7 @@ class Home extends Component {
 
   getOriginals = async () => {
     const response = await fetch(
-      'https://api.themoviedb.org/3/discover/tv?api_key=43cdec2ae13aa18beee5c974eb579a54',
+      `https://api.themoviedb.org/3/discover/tv?api_key=${global.API_KEY}`,
     )
     const data = await response.json()
     const OriginalData = data.results
@@ -174,7 +158,7 @@ class Home extends Component {
   renderOriginalRandomMovies = async () => {
     const RandomNumber = Math.floor(Math.random() * 200)
     const response = await fetch(
-      `https://api.themoviedb.org/3/trending/all/week?api_key=43cdec2ae13aa18beee5c974eb579a54&page=${RandomNumber}`,
+      `https://api.themoviedb.org/3/trending/all/week?api_key=${global.API_KEY}&page=${RandomNumber}`,
     )
     const data = await response.json()
     const result = data.results.map(each => ({

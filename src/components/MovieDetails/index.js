@@ -1,13 +1,11 @@
 import {Component} from 'react'
-import {Redirect} from 'react-router-dom'
 import Loader from 'react-loader-spinner'
 import SimilarMovieData from '../SimilarMovieData'
 import Navbar from '../Navbar'
-import NotFound from '../NotFound'
 import './index.css'
 
 class MovieDetails extends Component {
-  state = {movieData: [], isLoading: true, dataFailure: false}
+  state = {movieData: [], isLoading: true}
 
   componentDidMount() {
     this.getMovieDetails()
@@ -20,24 +18,22 @@ class MovieDetails extends Component {
     })
   }
 
-  getMovieDetails = async () => {
+  getMovieDetails = async similarMovieId => {
     const {match, history} = this.props
     const {params} = match
     const {id} = params
-    this.getMovies = () => id
     const response = await fetch(
-      `https://api.themoviedb.org/3/movie/${id}?api_key=43cdec2ae13aa18beee5c974eb579a54&language=en-US`,
+      `https://api.themoviedb.org/3/movie/${similarMovieId || id}?api_key=${
+        global.API_KEY
+      }&language=en-US`,
     )
-    console.log(response.status)
-    console.log('response.status')
+
     if (response.status === 404) {
       this.setState({isLoading: false})
       return history.replace('/NotFound')
     }
     const data = await response.json()
-    console.log(response)
     console.log(data)
-    console.log('data')
     const formattedData = {
       eachId: data.id,
       backdropPath: data.backdrop_path,
@@ -191,13 +187,15 @@ class MovieDetails extends Component {
     )
   }
 
+  movieId = id => {
+    localStorage.setItem('id', id)
+    this.getMovieDetails(localStorage.getItem('id'))
+  }
+
   render() {
-    const {match} = this.props
-    const {params} = match
-    const {id} = params
-    localStorage.setItem('movieDetails', this.getMovieDetails)
-    const {movieData, isLoading, dataFailure} = this.state
+    const {movieData, isLoading} = this.state
     const {backdropPath, posterPath} = movieData
+    console.log(movieData)
     return (
       <>
         <Navbar />
@@ -210,9 +208,8 @@ class MovieDetails extends Component {
                 <div
                   className="bg_image-posterPath-container"
                   style={{
-                    backgroundImage: `url(${`https://image.tmdb.org/t/p/original/${backdropPath}`})`,
+                    backgroundImage: `url(${`https://image.tmdb.org/t/p/original/${posterPath}`})`,
                     backgroundSize: 'cover',
-
                     color: '#f5f5f5',
                   }}
                 >
@@ -222,14 +219,17 @@ class MovieDetails extends Component {
                     </div>
                     <div className="movieDetails">{this.movieDetails()}</div>
                     <div className="moviesDetails-similar-container">
-                      <SimilarMovieData id={id} />
+                      <SimilarMovieData
+                        id={localStorage.getItem('id')}
+                        movieId={this.movieId}
+                      />
                     </div>
                   </div>
                 </div>
                 <div
                   className="bg_image-backdropPath-container"
                   style={{
-                    backgroundImage: `url(${`https://image.tmdb.org/t/p/original/${posterPath}`})`,
+                    backgroundImage: `url(${`https://image.tmdb.org/t/p/original/${backdropPath}`})`,
                     backgroundSize: 'cover',
                     color: '#f5f5f5',
                   }}
@@ -241,7 +241,10 @@ class MovieDetails extends Component {
                     </div>
                     <div className="movieDetails">{this.movieDetails()}</div>
                     <div className="moviesDetails-similar-container">
-                      <SimilarMovieData id={id} />
+                      <SimilarMovieData
+                        id={localStorage.getItem('id')}
+                        movieId={this.movieId}
+                      />
                     </div>
                   </div>
                 </div>

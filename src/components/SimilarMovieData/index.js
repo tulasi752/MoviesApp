@@ -21,7 +21,7 @@ class SimilarMovieData extends Component {
     const {id} = this.props
     const Random = Math.floor(Math.random() * 20)
     const response = await fetch(
-      `https://api.themoviedb.org/3/movie/${id}/similar?api_key=43cdec2ae13aa18beee5c974eb579a54&language=en-US&page=${Random}`,
+      `https://api.themoviedb.org/3/movie/${id}/similar?api_key=${global.API_KEY}&language=en-US&page=${Random}`,
     )
     const data = await response.json()
     const Result = data.results
@@ -36,14 +36,24 @@ class SimilarMovieData extends Component {
     return ''
   }
 
+  onClickMovie = () => {
+    this.GetSimilarMovies()
+  }
+
   SimilarMovie = () => {
+    const {movieId} = this.props
     const {Movies} = this.state
     return (
       <>
         <p className="moreMovies-heading">More Movies</p>
         <div>
           {Movies.map(each => (
-            <SimilarMovieImage originalData={each} key={each.id} />
+            <SimilarMovieImage
+              originalData={each}
+              key={each.id}
+              onClickMovie={this.onClickMovie}
+              movieId={movieId}
+            />
           ))}
         </div>
       </>

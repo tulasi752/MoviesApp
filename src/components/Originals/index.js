@@ -3,9 +3,7 @@ import './index.css'
 
 const Originals = props => {
   const {originalData} = props
-  console.log('originalData')
   const {id, backdropPath} = originalData
-  console.log(id)
   return (
     <Link to={`/movie/${id}`} className="item-link">
       <img
